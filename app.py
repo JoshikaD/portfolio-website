@@ -25,7 +25,7 @@ def submit():
     conn.commit()
     cur.close()
 
-    return redirect('/')
+    return "Form submitted successfully"
 
 # Run server
 if __name__ == '__main__':
