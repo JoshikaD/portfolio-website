@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, redirect
-import psycopg2
-
+import os
+DATABASE_URL = os.getenv("DATABASE_URL")
+conn =psycopg2.connect(DATABASE_URL)
 app = Flask(__name__)
 
 # Connect to PostgreSQL
@@ -36,4 +37,4 @@ def submit():
 
 # Run server
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
