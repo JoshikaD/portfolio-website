@@ -3,17 +3,7 @@ import os
 import psycopg2
 app = Flask(__name__)
 DATABASE_URL = os.getenv("DATABASE_URL")
-if DATABASE_URL:
-    conn =psycopg2.connect(DATABASE_URL)
-else:
-# Connect to PostgreSQL
-    conn = psycopg2.connect(
-        host="localhost",
-        database="portfolio",
-        user="postgres",
-        password="Jo16sh11ika@",  # change this
-        port="5432"
-    )
+conn =psycopg2.connect(DATABASE_URL)
 
 # Home route
 @app.route('/')
