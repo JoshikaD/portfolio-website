@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<header>
+    <h1>Hi, I'm Your Name 👋</h1>
+    <p>Web Developer | Student</p>
+</header>
+
+<section class="about">
+    <h2>About Me</h2>
+    <p>I build websites using HTML, CSS, Python and PostgreSQL.</p>
+</section>
+
+<section class="projects">
+    <h2>Projects</h2>
+    <div class="card">
+        <h3>Portfolio Website</h3>
+        <p>A personal portfolio with backend.</p>
+    </div>
+    <div class="card">
+        <h3>Student System</h3>
+        <p>Database project using PostgreSQL.</p>
+    </div>
+</section>
+
+<section class="contact">
+    <h2>Contact Me</h2>
+    <form action="/submit" method="POST">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="message" placeholder="Message"></textarea>
+        <button type="submit">Send</button>
+    </form>
+</section>
+
+</body>
+</html>
