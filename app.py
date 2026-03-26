@@ -25,7 +25,7 @@ def submit():
     conn.commit()
     cur.close()
 
-    return "Form submitted successfully"
+    return redirect("https://joshikad.github.io/portfolio-website/?success=true")
 
 # Run server
 if __name__ == '__main__':
